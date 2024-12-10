@@ -1,0 +1,20 @@
+server:
+  port: 8181
+
+spring:
+  application:
+    name: dubbo-consumer
+
+dubbo:
+  registry:
+    address: nacos://127.0.0.1:8848 #注册地址
+    # 使用默认的命名空间
+    #parameters:
+    #namespace: 7931ebad-b34c-43ed-b886-420267cc4937
+  application:
+    name: dubbo-consumer #应用名
+  consumer:
+    timeout: 30000 #超时时间
+    # 使用延迟加载方式，防止服务端不起或者合并部署时报服务状态异常
+    lazy: true
+    check: false
