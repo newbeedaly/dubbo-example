@@ -14,7 +14,7 @@ public class InfoController {
     @DubboReference
     private InfoService infoService;
 
-    @GetMapping("/getInfo")
+    @GetMapping("/get")
     public String getInfo() {
         return infoService.getInfo();
     }

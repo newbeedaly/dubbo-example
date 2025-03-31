@@ -1,16 +1,14 @@
 server:
   port: 8181
-
 spring:
   application:
     name: dubbo-consumer
-
 dubbo:
   registry:
     address: nacos://127.0.0.1:8848 #注册地址
     # 使用默认的命名空间
     #parameters:
-    #namespace: 7931ebad-b34c-43ed-b886-420267cc4937
+    #  namespace: 7931ebad-b34c-43ed-b886-420267cc4937
   application:
     name: dubbo-consumer #应用名
   consumer:
